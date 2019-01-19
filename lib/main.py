@@ -1,5 +1,5 @@
 '''
-Stack1e
+
 '''
 
 import pygame
@@ -53,11 +53,13 @@ bg_images[win].set_colorkey(black)
 bg_images[lose].set_colorkey(black)
 
 running = True
+pygame.init()
+pygame.display.set_caption('Stack1e')
 
 def main():
 	global game_state, current_x, current_y, current_speed, running, current_width, current_level
 
-	pygame.init()
+
 	screen = pygame.display.set_mode(screensize)
 
 	reset_game()
