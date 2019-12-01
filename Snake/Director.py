@@ -35,4 +35,5 @@ class Director:
         self.scene = scene
 
     def quit(self):
+        pygame.QUIT
         self.quit_flag = True
