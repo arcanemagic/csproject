@@ -3,7 +3,7 @@ from Game import *
 
 def main():
     dire = Director()
-    twop = EdiblesTwoPlayer(dire)
+    twop = mainGame(dire)
     dire.change_scene(twop)
     dire.loop()
 
