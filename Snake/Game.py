@@ -3,7 +3,7 @@ from Entity import *
 import random
 from pygame import gfxdraw
 
-class EdiblesTwoPlayer(Scene):
+class mainGame(Scene):
     def __init__(self, director):
         Scene.__init__(self, director)
         self.plyronewins = False
@@ -73,7 +73,7 @@ class EdiblesTwoPlayer(Scene):
         #Reset game
         if event.type == pygame.KEYDOWN and event.key == pygame.K_r:
             pygame.mixer.music.stop()
-            self.director.change_scene(EdiblesTwoPlayer(self.director))
+            self.director.change_scene(mainGame(self.director))
             pygame.mixer.music.load("music\shake.ogg")
             pygame.mixer.music.play(-1)
 

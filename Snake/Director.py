@@ -5,7 +5,7 @@ class Director:
         self.screen = pygame.display.set_mode((800, 800))
         self.scale = int(pygame.display.get_surface().get_width() / 400)
         pygame.display.set_caption("Snake It Off")
-        pygame.display.set_icon(pygame.image.load("images\ed.png"))
+        pygame.display.set_icon(pygame.image.load("images\snake.png"))
         self.font = pygame.font.Font("fonts\Condition.ttf", 45 * self.scale)
         self.scene = None
         self.fps = 15
