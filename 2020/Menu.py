@@ -36,7 +36,7 @@ def main():
     main_menu = pygameMenu.Menu(surface,
                                 bgfun=main_background,
                                 color_selected=color_white,
-                                font="norwester",
+                                font="fonts/Norwester.otf",
                                 font_color=color_black,
                                 font_size=30,
                                 font_size_title=40,
