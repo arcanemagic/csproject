@@ -39,17 +39,7 @@ win = 3
 
 game_state = intro
 
-data_py = os.path.abspath(os.path.dirname(__file__))
-data_dir = os.path.normpath(os.path.join(data_py, 'images'))
-
-def filepath(filename):
-    #Determine the path to a file in the data directory.
-    return os.path.join(data_dir, filename)
-
-def load_image(filename):
-    return pygame.image.load(os.path.join(data_dir, filename))
-
-bg_images = (load_image("intro.png"), load_image("game.png"), load_image("lose.png"), load_image("win.png"))
+bg_images = (pygame.image.load("images/intro.png"), pygame.image.load("images/game.png"), pygame.image.load("images/lose.png"), pygame.image.load("images/win.png"))
 
 bg_images[win].set_colorkey(black)
 bg_images[lose].set_colorkey(black)
